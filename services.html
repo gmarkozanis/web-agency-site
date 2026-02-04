@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GM • Υπηρεσίες</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Logo"/>
+        <div>
+          <div class="t1">GM</div>
+          <div class="t2">Web & AI Solutions</div>
+        </div>
+      </a>
+
+      <nav class="nav-links" data-nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Υπηρεσίες</a>
+        <a href="pricing.html">Πακέτα</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="contact.html">Επικοινωνία</a>
+      </nav>
+
+      <div style="display:flex; gap:10px; align-items:center;">
+        <a class="btn primary" href="contact.html">Ζήτα προσφορά</a>
+        <button class="mobile-toggle" aria-label="Menu" data-mobile-toggle>☰</button>
+      </div>
+    </div>
+    <div class="container mobile-menu" data-mobile-menu data-nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Υπηρεσίες</a>
+      <a href="pricing.html">Πακέτα</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="contact.html">Επικοινωνία</a>
+    </div>
+  </header>
+
+  <main class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h1 class="section-title" style="font-size:34px;">Υπηρεσίες</h1>
+        <p class="section-sub">Διάλεξε υπηρεσία ή πακέτο και ξεκινάμε.</p>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <section id="websites" class="card">
+        <h3>Web Design & Development</h3>
+        <p>Websites που μετατρέπουν επισκέπτες σε πελάτες.</p>
+        <ul class="list">
+          <li>Custom design • Responsive</li>
+          <li>SEO basics • Speed optimization</li>
+          <li>Forms • Analytics</li>
+        </ul>
+      </section>
+
+      <section id="ai-chatbot" class="card">
+        <h3>AI Chatbot</h3>
+        <p>Support, sales και leads 24/7 με έτοιμα flows.</p>
+        <ul class="list">
+          <li>FAQ knowledge base</li>
+          <li>Lead capture & handoff</li>
+          <li>Embedding στο site</li>
+        </ul>
+      </section>
+
+      <section id="automations" class="card">
+        <h3>AI Εφαρμογές & Αυτοματισμοί</h3>
+        <p>Συνδέουμε εργαλεία, αυτοματοποιούμε διαδικασίες και φτιάχνουμε custom AI.</p>
+        <ul class="list">
+          <li>CRM, email, data workflows</li>
+          <li>Dashboards & monitoring</li>
+          <li>Integrations (Zapier/Make/API)</li>
+        </ul>
+      </section>
+
+      <section id="ai-content" class="card">
+        <h3>AI Social Content</h3>
+        <p>Πλάνο + παραγωγή περιεχομένου κάθε μήνα.</p>
+        <ul class="list">
+          <li>Content calendar</li>
+          <li>Captions, hashtags, scripts</li>
+          <li>Revisions & reporting</li>
+        </ul>
+      </section>
+    </div>
+
+    <div style="margin-top:18px;">
+      <a class="btn primary" href="pricing.html">Δες πακέτα</a>
+      <a class="btn ghost" style="margin-left:10px;" href="contact.html">Ζήτησε προσφορά</a>
+    </div>
+  </div>
+</main>
+
+
+  <footer class="footer">
+    <div class="container" style="display:flex; gap:14px; align-items:center; justify-content:space-between; flex-wrap:wrap;">
+      <div>© <span id="y"></span> GM Web & AI Solutions</div>
+      <div>Built as a fast static site (no Prisma / DB)</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="app.js"></script>
+<!-- Tawk.to Live Chat -->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    // Αντικατάστησε το YOUR_PROPERTY_ID/YOUR_WIDGET_ID με αυτά που δίνει το tawk.to
+    // Παράδειγμα: https://embed.tawk.to/XXXX/YYYY
+    s1.src='https://embed.tawk.to/69833ee8f633d11c3cbc7ebc/1jgkarf2d';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
+</script>
+<!-- End Tawk.to Live Chat -->
+
+</body>
+</html>

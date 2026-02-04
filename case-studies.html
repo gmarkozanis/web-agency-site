@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GM • Case Studies</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Logo"/>
+        <div>
+          <div class="t1">GM</div>
+          <div class="t2">Web & AI Solutions</div>
+        </div>
+      </a>
+
+      <nav class="nav-links" data-nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Υπηρεσίες</a>
+        <a href="pricing.html">Πακέτα</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="contact.html">Επικοινωνία</a>
+      </nav>
+
+      <div style="display:flex; gap:10px; align-items:center;">
+        <a class="btn primary" href="contact.html">Ζήτα προσφορά</a>
+        <button class="mobile-toggle" aria-label="Menu" data-mobile-toggle>☰</button>
+      </div>
+    </div>
+    <div class="container mobile-menu" data-mobile-menu data-nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Υπηρεσίες</a>
+      <a href="pricing.html">Πακέτα</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="contact.html">Επικοινωνία</a>
+    </div>
+  </header>
+
+  <main class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h1 class="section-title" style="font-size:34px;">Case Studies</h1>
+        <p class="section-sub">Παραδείγματα έργων και αποτελεσμάτων. (Μπορείς να τα συμπληρώσεις.)</p>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h3>Landing Page + Leads</h3>
+        <p>Ανασχεδιασμός landing + tracking events → καλύτερη μετατροπή.</p>
+        <div class="kpi" style="margin-top:10px;"><strong>Αποτέλεσμα:</strong> +32% conversion (ενδεικτικό)</div>
+      </div>
+      <div class="card">
+        <h3>AI Chatbot για Support</h3>
+        <p>FAQ bot με handoff → λιγότερα tickets και πιο γρήγορες απαντήσεις.</p>
+        <div class="kpi" style="margin-top:10px;"><strong>Αποτέλεσμα:</strong> -40% repetitive questions (ενδεικτικό)</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px;">
+      <h3>Θες να βάλουμε πραγματικά case studies;</h3>
+      <p>Στείλε 2–3 projects και θα τα περάσω με σωστή δομή (στόχος → λύση → αποτέλεσμα).</p>
+      <div style="margin-top:12px;"><a class="btn primary" href="contact.html">Στείλε στοιχεία</a></div>
+    </div>
+  </div>
+</main>
+
+
+  <footer class="footer">
+    <div class="container" style="display:flex; gap:14px; align-items:center; justify-content:space-between; flex-wrap:wrap;">
+      <div>© <span id="y"></span> GM Web & AI Solutions</div>
+      <div>Built as a fast static site (no Prisma / DB)</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="app.js"></script>
+<!-- Tawk.to Live Chat -->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    // Αντικατάστησε το YOUR_PROPERTY_ID/YOUR_WIDGET_ID με αυτά που δίνει το tawk.to
+    // Παράδειγμα: https://embed.tawk.to/XXXX/YYYY
+    s1.src='https://embed.tawk.to/69833ee8f633d11c3cbc7ebc/1jgkarf2d';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
+</script>
+<!-- End Tawk.to Live Chat -->
+
+</body>
+</html>

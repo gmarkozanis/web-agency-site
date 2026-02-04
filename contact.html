@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GM • Επικοινωνία</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Logo"/>
+        <div>
+          <div class="t1">GM</div>
+          <div class="t2">Web & AI Solutions</div>
+        </div>
+      </a>
+
+      <nav class="nav-links" data-nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Υπηρεσίες</a>
+        <a href="pricing.html">Πακέτα</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="contact.html">Επικοινωνία</a>
+      </nav>
+
+      <div style="display:flex; gap:10px; align-items:center;">
+        <a class="btn primary" href="contact.html">Ζήτα προσφορά</a>
+        <button class="mobile-toggle" aria-label="Menu" data-mobile-toggle>☰</button>
+      </div>
+    </div>
+    <div class="container mobile-menu" data-mobile-menu data-nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Υπηρεσίες</a>
+      <a href="pricing.html">Πακέτα</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="contact.html">Επικοινωνία</a>
+    </div>
+  </header>
+
+  <main class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h1 class="section-title" style="font-size:34px;">Επικοινωνία</h1>
+        <p class="section-sub">Στείλε brief και θα σου απαντήσουμε με πρόταση.</p>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h3>Τι να γράψεις στο μήνυμα</h3>
+        <ul class="list">
+          <li>Τι υπηρεσία θες (site / chatbot / content / automations)</li>
+          <li>Στόχος (leads, πωλήσεις, support)</li>
+          <li>Παραδείγματα sites που σου αρέσουν</li>
+          <li>Χρονοδιάγραμμα</li>
+        </ul>
+        <hr class="hr"/>
+        <div class="kpi"><strong>Email:</strong> webdevmarkozanis@gmail.com</div>
+      </div>
+
+      <form class="card form" action="#" method="post" onsubmit="alert('Demo form: σύνδεσε το με Formspree/Netlify Forms ή custom backend.'); return false;">
+        <div>
+          <label>Όνομα</label>
+          <input name="name" placeholder="π.χ. Γιάννης" required />
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="email" name="email" placeholder="you@company.com" required />
+        </div>
+        <div>
+          <label>Τηλέφωνο (προαιρετικό)</label>
+          <input name="phone" placeholder="+30…" />
+        </div>
+        <div>
+          <label>Μήνυμα</label>
+          <textarea name="message" rows="5" placeholder="Πες μας τι χρειάζεσαι…"></textarea>
+        </div>
+        <button class="btn primary" type="submit">Αποστολή</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+
+  <footer class="footer">
+    <div class="container" style="display:flex; gap:14px; align-items:center; justify-content:space-between; flex-wrap:wrap;">
+      <div>© <span id="y"></span> GM Web & AI Solutions</div>
+      <div>Built as a fast static site (no Prisma / DB)</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="app.js"></script>
+<!-- Tawk.to Live Chat -->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    // Αντικατάστησε το YOUR_PROPERTY_ID/YOUR_WIDGET_ID με αυτά που δίνει το tawk.to
+    // Παράδειγμα: https://embed.tawk.to/XXXX/YYYY
+    s1.src='https://embed.tawk.to/69833ee8f633d11c3cbc7ebc/1jgkarf2d';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
+</script>
+<!-- End Tawk.to Live Chat -->
+
+</body>
+</html>
